@@ -1,10 +1,23 @@
-body {
-    background-color: powderblue;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    
+*{
+    margin: 0px;
 }
+
+body {
+    background-color: rgb(30, 0, 44);
+    padding: 30px;
+}
+
 h1 {
-    color: blue;
+    color: rgb(171, 149, 184);
+}
+
+#Bolha {
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    background-color: rgb(80, 23, 94);
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
 }
