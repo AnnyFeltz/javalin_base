@@ -1,9 +1,19 @@
 package br.edu.ifpr.pgua.eic.tads.controllers;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import br.edu.ifpr.pgua.eic.tads.models.Cadastro;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
 public class CadastroController {
+
+    //atributo
+    private Cadastro cadastro;
+
+    public CadastroController(Cadastro cadastro){
+    }
 
     public Handler get = (Context ctx)->{
         ctx.render("cadastro.html");
@@ -14,7 +24,11 @@ public class CadastroController {
         String nome = ctx.formParam("nome");
         String cpf = ctx.formParam("cpf");
 
-        ctx.html("<h1>Nome: " + nome.toUpperCase() + "CPF: " + cpf + "</h1>");
+        Map<String, Object> dados = new HashMap<>();
+
+        dados.put("pessoas", cadastro.getPessoas());
+        
+        ctx.render("resposta.html", dados);
     };
 
 }
