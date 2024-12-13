@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import br.edu.ifpr.pgua.eic.tads.models.Cadastro;
+import br.edu.ifpr.pgua.eic.tads.models.Pessoa;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 

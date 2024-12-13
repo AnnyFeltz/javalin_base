@@ -15,7 +15,7 @@ public class App {
         
         IndexController indexController = new IndexController();
         CadastroController cadastroController = new CadastroController(cadastro);
-        ListController listaController = new ListController(cadastro);
+        ListController listController = new ListController(cadastro);
         
         app.get("/", indexController.get);
         app.get("/ola", indexController.ola);
@@ -23,6 +23,6 @@ public class App {
         app.get("/cadastro", cadastroController.get);
         app.post("/cadastro", cadastroController.post);
 
-        app.get("/lista", listcontroller.get);
+        app.get("/lista", listController.get);
     }
 }
