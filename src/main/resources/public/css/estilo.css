@@ -4,9 +4,9 @@
 
 body {
     background-color: rgb(205, 255, 200);
-    height: 100vw;
     justify-items: center;
     align-content: center;
+    height: 50vw;
 }
 
 h1 {

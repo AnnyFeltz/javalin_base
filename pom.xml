@@ -32,20 +32,26 @@
         <version>6.3.0</version>
     </dependency>
     <dependency>
-    <groupId>io.javalin</groupId>
-    <artifactId>javalin-rendering</artifactId>
-    <version>6.3.0</version>
-</dependency>
-<dependency>
-  <groupId>org.freemarker</groupId>
-  <artifactId>freemarker</artifactId>
-  <version>2.3.33</version>
-</dependency>
-  <dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>2.0.9</version>
-  </dependency>
+      <groupId>io.javalin</groupId>
+      <artifactId>javalin-rendering</artifactId>
+      <version>6.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.33</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.33</version>
+    </dependency>
   </dependencies>
 
   <build>

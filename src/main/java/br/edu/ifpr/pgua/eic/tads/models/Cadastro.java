@@ -1,5 +1,8 @@
 package br.edu.ifpr.pgua.eic.tads.models;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +19,13 @@ public class Cadastro {
 
     //adicionar pessoa
     public void add(Pessoa p){
+        try (Connection con = DriverManager.getConnection("jdbc:mysql://wagnerweinert.com.br:3306/tads24_ana", "tads24_ana", "tads24_ana")) {
+        
+            System.out.println("Conectado!!");
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
         this.pessoas.add(p);
     }
 
