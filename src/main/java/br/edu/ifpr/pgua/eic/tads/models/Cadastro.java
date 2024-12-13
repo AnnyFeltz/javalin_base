@@ -12,6 +12,13 @@ public class Cadastro {
         this.pessoas = new ArrayList<>();
     }
 
+    //metodos
+
+    //adicionar pessoa
+    public void add(Pessoa p){
+        this.pessoas.add(p);
+    }
+
     //getters & setters
 
     //lista de pessoas
@@ -22,4 +29,5 @@ public class Cadastro {
     public void setPessoas(List<Pessoa> pessoas) {
         this.pessoas = pessoas;
     }
+
 }
