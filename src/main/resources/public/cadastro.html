@@ -10,8 +10,10 @@
 
 <body>
 
-    <#if mensagem?? >
-        <h2>${mensagem}</h2>
+    <#if mensagem??>
+        <div id="Bolha">
+            <h2>${mensagem}</h2>
+        </div>
     </#if>
 
     <br>
@@ -25,7 +27,7 @@
         <label for="telefone">Telefone:</label>
         <input name="telefone" />
         <br>
-        <input type="submit" id="enviar"/>
+        <input type="submit" id="enviar" />
     </form>
 </body>
 

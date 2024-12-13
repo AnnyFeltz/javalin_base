@@ -9,10 +9,6 @@ body {
     height: 50vw;
 }
 
-h1 {
-    color: white;
-}
-
 #Bolha{
     display: block;
     background-color:rgb(145, 219, 139);
@@ -21,6 +17,7 @@ h1 {
     padding: 20px;
     width: max-content;
     height: max-content;
+    color: white;
 }
 
 a {
@@ -31,12 +28,17 @@ a {
 #form {
     display: flex;
     flex-direction: column;
+    background-color:rgb(145, 219, 139);
+    border-radius: 100px;
 }
 
 #enviar{
     width: fit-content;
 }
 
-#Resposta{
+#Lista{
+    background-color:rgb(145, 219, 139);
+    border-radius: 30px;
     list-style: none;
+    color: white;
 }
